@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT dept_store_chain_id FROM department_stores GROUP BY dept_store_chain_id ORDER BY count(*) DESC LIMIT 2", "tableName": "Department_Stores", "question": "\"What are the top 2 department store chains with the most number of stores?\"", "tableSchema": "dept_store_id|dept_store_chain_id|store_name|store_address|store_phone|store_email"}]

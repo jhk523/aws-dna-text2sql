@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT T1.address_details FROM addresses AS T1 JOIN customer_addresses AS T2 ON T1.address_id  =  T2.address_id WHERE T2.customer_id  =  10", "tableName": "Addresses", "question": "\"What are the address details for the customer with ID 10?\"", "tableSchema": "address_id|address_details"}]

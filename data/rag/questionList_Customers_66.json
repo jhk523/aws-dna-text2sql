@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT max(customer_code) ,  min(customer_code) FROM Customers", "tableName": "Customers", "question": "\"What are the highest and lowest customer code values in the Customers table?\"", "tableSchema": "customer_id|payment_method_code|customer_code|customer_name|customer_address|customer_phone|customer_email"}]

@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT product_name FROM products WHERE product_type_code  =  'Hardware' ORDER BY product_price DESC LIMIT 1", "tableName": "Products", "question": "What is the name of the most expensive hardware product?", "tableSchema": "product_id|product_type_code|product_name|product_price"}]

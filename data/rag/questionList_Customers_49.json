@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT customer_name ,  customer_id FROM customers WHERE customer_address LIKE \"%TN%\"", "tableName": "Customers", "question": "What are the names and IDs of customers whose addresses are located in Tennessee?", "tableSchema": "customer_id|payment_method_code|customer_code|customer_name|customer_address|customer_phone|customer_email"}]

@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT order_id ,  customer_id FROM customer_orders WHERE order_status_code  =   \"Cancelled\" ORDER BY order_date", "tableName": "Customer_Orders", "question": "\"What are the order IDs and customer IDs for the orders that were cancelled, sorted by the order date?\"", "tableSchema": "order_id|customer_id|order_status_code|order_date"}]

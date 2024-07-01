@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT product_id FROM product_suppliers ORDER BY total_amount_purchased DESC LIMIT 3", "tableName": "Product_Suppliers", "question": "What are the top 3 products with the highest total amount purchased from suppliers?", "tableSchema": "product_id|supplier_id|date_supplied_from|date_supplied_to|total_amount_purchased|total_value_purchased"}]

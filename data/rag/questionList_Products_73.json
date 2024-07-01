@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT max(product_price) ,  min(product_price) ,  product_type_code FROM products GROUP BY product_type_code ORDER BY product_type_code", "tableName": "Products", "question": "What are the maximum and minimum prices for each product type, ordered by product type code?", "tableSchema": "product_id|product_type_code|product_name|product_price"}]

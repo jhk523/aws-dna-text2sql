@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT count(DISTINCT product_type_code) FROM products", "tableName": "Products", "question": "How many distinct product types are there?", "tableSchema": "product_id|product_type_code|product_name|product_price"}]

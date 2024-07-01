@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT T1.staff_name ,  T1.staff_gender FROM staff AS T1 JOIN staff_department_assignments AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.date_assigned_from LIKE \"2016%\"", "tableName": "Staff", "question": "\"What are the names and genders of staff members who were assigned to departments in 2016?\"", "tableSchema": "staff_id|staff_gender|staff_name"}]

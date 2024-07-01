@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT product_id ,  product_name FROM products WHERE product_price  <  600 OR product_price  >  900", "tableName": "Products", "question": "\"What are the product IDs and names of products whose prices are either less than $600 or greater than $900?\"", "tableSchema": "product_id|product_type_code|product_name|product_price"}]

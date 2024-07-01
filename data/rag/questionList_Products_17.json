@@ -1,0 +1,1 @@
+[{"sql_query": "SELECT product_type_code ,  avg(product_price) FROM products GROUP BY product_type_code", "tableName": "Products", "question": "\"What is the average price of products for each product type?\"", "tableSchema": "product_id|product_type_code|product_name|product_price"}]
