@@ -498,8 +498,8 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
         scores[level]['exec'] = 0
         for type_ in partial_types:
             scores[level]['partial'][type_] = {'acc': 0., 'rec': 0., 'f1': 0.,'acc_count':0,'rec_count':0}
-
-    eval_err_num = 0
+    
+    eval_err_num = 0   
     for p, g in zip(plist, glist):
         p_str = p[0]
         g_str, db = g
@@ -533,8 +533,7 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
             "union": None,
             "where": []
             }
-            eval_err_num += 1
-            print("eval_err_num:{}".format(eval_err_num))
+
 
         # rebuild sql for value evaluation
         kmap = kmaps[db_name]
@@ -546,10 +545,15 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
         p_sql = rebuild_sql_col(p_valid_col_units, p_sql, kmap)
 
         if etype in ["all", "exec"]:
+        
             exec_score = eval_exec_match(db, p_str, g_str, p_sql, g_sql)
             if exec_score:
                 scores[hardness]['exec'] += 1.0
                 scores['all']['exec'] += 1.0
+            else:
+                eval_err_num += 1
+                print("eval_err_num:{}".format(eval_err_num))
+                print('------------------')
 
         if etype in ["all", "match"]:
             exact_score = evaluator.eval_exact_match(p_sql, g_sql)
@@ -628,18 +632,28 @@ def eval_exec_match(db, p_str, g_str, pred, gold):
 
     cursor.execute(g_str)
     q_res = cursor.fetchall()
-
-    def res_map(res, val_units):
-        rmap = {}
-        for idx, val_unit in enumerate(val_units):
-            key = tuple(val_unit[1]) if not val_unit[2] else (val_unit[0], tuple(val_unit[1]), tuple(val_unit[2]))
-            rmap[key] = [r[idx] for r in res]
-        return rmap
-
-    p_val_units = [unit[1] for unit in pred['select'][1]]
-    q_val_units = [unit[1] for unit in gold['select'][1]]
     
-    return res_map(p_res, p_val_units) == res_map(q_res, q_val_units)
+    res = p_res == q_res
+    if not res:
+        print('[pred]')
+        print(p_res)
+        print(p_str)
+        print('[gold]')
+        print(q_res)
+        print(g_str)
+    return res
+
+#     def res_map(res, val_units):
+#         rmap = {}
+#         for idx, val_unit in enumerate(val_units):
+#             key = tuple(val_unit[1]) if not val_unit[2] else (val_unit[0], tuple(val_unit[1]), tuple(val_unit[2]))
+#             rmap[key] = [r[idx] for r in res]
+#         return rmap
+
+#     p_val_units = [unit[1] for unit in pred['select'][1]]
+#     q_val_units = [unit[1] for unit in gold['select'][1]]
+    
+#     return res_map(p_res, p_val_units) == res_map(q_res, q_val_units)
 
 
 # Rebuild SQL functions for value evaluation
