@@ -27,6 +27,8 @@ import traceback
 import argparse
 
 from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql
+import nltk
+nltk.download('punkt')
 
 # Flag to disable value evaluation
 DISABLE_VALUE = True
@@ -636,6 +638,7 @@ def eval_exec_match(db, p_str, g_str, pred, gold):
 
     p_val_units = [unit[1] for unit in pred['select'][1]]
     q_val_units = [unit[1] for unit in gold['select'][1]]
+    
     return res_map(p_res, p_val_units) == res_map(q_res, q_val_units)
 
 

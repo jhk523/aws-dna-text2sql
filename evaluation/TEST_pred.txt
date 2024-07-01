@@ -1,5 +1,5 @@
-SELECT "product_id" FROM "Product_Suppliers" ORDER BY "total_amount_purchased" DESC LIMIT 3;
-SELECT "product_id" FROM "Product_Suppliers" ORDER BY "total_amount_purchased" DESC LIMIT 3;
-SELECT "product_id", "product_type_code" FROM "Products" ORDER BY "product_price" LIMIT 1;
-SELECT "product_id", "product_type_code" FROM "Products" ORDER BY "product_price" LIMIT 1;
-SELECT COUNT(DISTINCT "product_type_code") FROM "Products"
+SELECT product_id FROM Product_Suppliers ORDER BY total_amount_purchased DESC LIMIT 3;
+SELECT product_id FROM Product_Suppliers ORDER BY total_amount_purchased DESC LIMIT 3;
+SELECT product_id, product_type_code FROM Products ORDER BY product_price LIMIT 1;
+SELECT product_id, product_type_code FROM Products ORDER BY product_price LIMIT 1;
+SELECT COUNT(DISTINCT product_type_code) FROM Products
