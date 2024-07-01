@@ -1,0 +1,88 @@
+What are the ids of the top three products that were purchased in the largest amount?
+Give the ids of the three products purchased in the largest amounts.
+What are the product id and product type of the cheapest product?
+Give the id and product type of the product with the lowest price.
+Find the number of different product types.
+Count the number of distinct product types.
+Return the address of customer 10.
+What is the address for the customer with id 10?
+What are the staff ids and genders of all staffs whose job title is Department Manager?
+Return the staff ids and genders for any staff with the title Department Manager.
+For each payment method, return how many customers use it.
+How many customers use each payment method?
+What is the id of the product that was ordered the most often?
+Give the product id for the product that was ordered most frequently.
+What are the name, phone number and email address of the customer who made the largest number of orders?
+Return the name, phone number and email address for the customer with the most orders.
+What is the average price for each type of product?
+Return the average price for each product type.
+How many department stores does the store chain South have?
+Count the number of stores the chain South has.
+What is the name and job title of the staff who was assigned the latest?
+Return the name and job title of the staff with the latest date assigned.
+Give me the product type, name and price for all the products supplied by supplier id 3.
+Return the product type, name, and price for products supplied by supplier 3.
+Return the distinct name of customers whose order status is Pending, in the order of customer id.
+What are the distinct names of customers with an order status of Pending, sorted by customer id?
+Find the name and address of the customers who have both New and Pending orders.
+What are the names and addressed of customers who have both New and Pending orders?
+Return ids of all the products that are supplied by supplier id 2 and are more expensive than the average price of all products.
+What are the ids of products from the supplier with id 2, which are more expensive than the average price across all products?
+What is the id and name of the department store that has both marketing and managing department?
+What are the ids and names of department stores with both marketing and managing departments?
+What are the ids of the two department store chains with the largest number of department stores?
+Return the ids of the two department store chains with the most department stores.
+What is the id of the department with the least number of staff?
+Return the id of the department with the fewest staff assignments.
+For each product type, return the maximum and minimum price.
+What are the maximum and minimum product prices for each product type?
+Find the product type whose average price is higher than the average price of all products.
+What is the code of the product type with an average price higher than the average price of all products?
+Find the id and name of the staff who has been assigned for the shortest period.
+What is the id and name of the staff who has been assigned for the least amount of time?
+Return the names and ids of all products whose price is between 600 and 700.
+What are the names and ids of products costing between 600 and 700?
+Find the ids of all distinct customers who made order after some orders that were Cancelled.
+What are the distinct ids of customers who made an order after any order that was Cancelled?
+What is id of the staff who had a Staff Department Assignment earlier than any Clerical Staff?
+Return the id of the staff whose Staff Department Assignment was earlier than that of any Clerical Staff.
+What are the names and ids of customers whose address contains TN?
+Return the names and ids of customers who have TN in their address.
+Return the name and gender of the staff who was assigned in 2016.
+What are the names and genders of staff who were assigned in 2016?
+List the name of staff who has been assigned multiple jobs.
+What are the names of staff who have been assigned multiple jobs?
+List the name and phone number of all suppliers in the alphabetical order of their addresses.
+What are the names and phone numbers for all suppliers, sorted in alphabetical order of their addressed?
+What are the phone numbers of all customers and suppliers.
+Return the phone numbers for all customers and suppliers.
+Return the ids of all products that were ordered more than three times or supplied more than 80000.
+What are the ids of all products that were either ordered more than 3 times or have a cumulative amount purchased of above 80000?
+What are id and name of the products whose price is lower than 600 or higher than 900?
+Give the ids and names of products with price lower than 600 or higher than 900.
+Find the id of suppliers whose average amount purchased for each product is above 50000 or below 30000.
+What are the ids of suppliers which have an average amount purchased of above 50000 or below 30000?
+What are the average amount purchased and value purchased for the supplier who supplies the most products.
+Return the average total amount purchased and total value purchased for the supplier who supplies the greatest number of products.
+What is the largest and smallest customer codes?
+Return the maximum and minimum customer codes.
+List the names of all the distinct customers who bought a keyboard.
+What are the distinct names of customers who have purchased a keyboard?
+List the names and phone numbers of all the distinct suppliers who supply red jeans.
+What are the distinct names and phone numbers for suppliers who have red jeans?
+What are the highest and lowest prices of products, grouped by and alphabetically ordered by product type?
+Give the maximum and minimum product prices for each product type, grouped and ordered by product type.
+List the order id, customer id for orders in Cancelled status, ordered by their order dates.
+What are the order ids and customer ids for orders that have been Cancelled, sorted by their order dates?
+Find the names of products that were bought by at least two distinct customers.
+What are the distinct names of products purchased by at least two different customers?
+Find the names of customers who have bought by at least three distinct products.
+What are the distinct names of customers who have purchased at least three different products?
+Find the name and gender of the staff who has been assigned the job of Sales Person but never Clerical Staff.
+What are the names and genders of staff who have held the title Sales Person, but never Clerical Staff?
+Find the id and name of customers whose address contains WY state and do not use credit card for payment.
+What are the ids and names of customers with addressed that contain WY and who do not use a credit card for payment?
+Find the average price of all product clothes.
+What is the average price of clothes?
+Find the name of the most expensive hardware product.
+What is the name of the hardware product with the greatest price?
